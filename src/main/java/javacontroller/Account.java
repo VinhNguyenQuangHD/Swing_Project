@@ -2,15 +2,24 @@ package javacontroller;
 
 public class Account {
     private int __id_account;
-    private String username_account,email_account,password_account;
+    private String username_account,email_account,password_account, password_account_confirm;
 
     public Account(){}
 
-    public Account(int __id_account, String username_account, String email_account, String password_account) {
+    public Account(int __id_account, String username_account, String email_account, String password_account, String password_account_confirm) {
         this.__id_account = __id_account;
         this.username_account = username_account;
         this.email_account = email_account;
         this.password_account = password_account;
+        this.password_account_confirm = password_account_confirm;
+    }
+
+    public String getPassword_account_confirm() {
+        return password_account_confirm;
+    }
+
+    public void setPassword_account_confirm(String password_account_confirm) {
+        this.password_account_confirm = password_account_confirm;
     }
 
     public int get__id_account() {
